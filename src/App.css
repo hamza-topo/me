@@ -130,10 +130,27 @@ code {
   gap: 21px;
 }
 
+.me.card {
+  /* width: 80%; */
+  /* Adjust the percentage as needed */
+  height: auto;
+  /* Let the height adjust automatically */
+}
+
+.me.card p {
+  font-size: 1.2rem;
+}
+
 .me img {
-  width: 75px;
+  /* width: 50%; */
   height: 75px;
   border-radius: 4%;
+}
+
+@media only screen and (max-width: 768px) {
+  .me {
+    width: 100%;
+  }
 }
 
 .nav-items {
@@ -466,8 +483,8 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 25px;
-  margin-right: 4%;
-  margin-left: 4%;
+  /* margin-right: 4%; */
+  /* margin-left: 4%; */
   /* width: 50%; */
 }
 
