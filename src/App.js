@@ -13,7 +13,7 @@ function App() {
       {/* <Footer /> */}
       <Nav />
       <Routes>
-        <Route path="/" element={<About />} />
+        <Route path="/react" element={<About />} />
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
