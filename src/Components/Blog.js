@@ -12,6 +12,7 @@ export function Blog() {
           <div className="me card">
             <img src={Dev} alt="" />
             <p className="small">
+              <a href={blog.link} target="_blank" rel="noopener noreferrer"><h1 className='section-title'>{blog.title}</h1></a><br></br>
               {blog.content}
               <ul className='header-socials-icons'>
                 <li><a href={blog.link} target="_blank" rel="noopener noreferrer"><i className="fas fa-arrow-right"></i></a></li>
