@@ -457,11 +457,9 @@ footer {
 .blog {
   display: flex;
   flex-direction: row;
-  justify-content: start;
   align-items: center;
-  /* flex-grow: 10px; */
-  gap: 21px;
-  /* margin-top: 1%; */
+  justify-content: center;
+  margin-top: 25px;
 }
 
 .blog img {
