@@ -137,15 +137,46 @@ code {
   /* Let the height adjust automatically */
 }
 
-.me.card p {
-  font-size: 1.2rem;
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .me.card p {
+    font-size: 16px;
+  }
+
+  .section-title {
+    text-decoration: underline;
+    color: #1abc89;
+  }
+
+  .me img {
+    height: 70px;
+    border-radius: 4%;
+    margin-left: 2px;
+  }
 }
 
-.me img {
-  /* width: 50%; */
-  height: 75px;
-  border-radius: 4%;
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .me.card p {
+    font-size: 10px;
+  }
+
+  .section-title {
+    text-decoration: underline;
+    color: #1abc89;
+  }
+
+  .me img {
+    height: 50px;
+    border-radius: 4%;
+    margin-left: 2px;
+  }
 }
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
   .me {
