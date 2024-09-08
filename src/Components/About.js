@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component }  from 'react';
 import Me from '../me.jpg';
 export function About() {
     return (

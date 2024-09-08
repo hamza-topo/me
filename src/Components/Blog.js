@@ -1,5 +1,6 @@
-import React from 'react'
-import Dev from '../dev.png'
+import React, { Component }  from 'react';
+import Dev from '../dev.png';
+
 export function Blog() {
   const blogs = [
     { published: 'Feb 6 2024', link: 'https://dev.to/hamzatopo/laravel-design-pattern-repository-4m7f', title: "How to use repository design pattern in laravel ? ", content: "I vividly recall my initial encounter with the term 'Design Pattern' – a moment of profound confusion as I grappled with whether it was a mere philosophical concept or a collection of abstract theories. The burning question in my mind was: how could such a concept be practically applied to something as tangible as my to-do list project 😅?..." },
