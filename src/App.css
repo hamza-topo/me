@@ -21,6 +21,10 @@ body {
   background-color: var(--bg-color);
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .header {
   margin: 2%;
 }
@@ -137,11 +141,6 @@ a:hover {
 
 
 .blogs {
-  /* justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 25px; */
   display: flex;
   flex-direction: column;
   align-items: center;

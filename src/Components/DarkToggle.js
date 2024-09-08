@@ -30,7 +30,7 @@ export default function DarkToggle() {
     return (
         <div className='footer'>
             <i
-                className="fa-sharp-duotone fa-solid fa-lightbulb fa-lg"
+                className="fa-sharp-duotone fa-solid fa-lightbulb fa-2xl cursor-pointer"
                 onClick={() => setIsDark(!isDark)} // Toggle isDark on click
             ></i>
         </div>
