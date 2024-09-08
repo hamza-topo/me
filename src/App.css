@@ -12,11 +12,15 @@
   --card-bg-color: #222529;
   --text-color: white;
   --btn-color: #ffffff00;
-  transition: all ease-in-out .8s;
 }
+
 
 body {
   background-color: var(--bg-color);
+}
+
+.animate {
+  transition: all ease-in-out .8s;
 }
 
 .cursor-pointer {
@@ -44,7 +48,7 @@ ul.header-socials-icons {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  justify-content: end;
+  justify-content: flex-end;
   margin-top: 5px;
 }
 

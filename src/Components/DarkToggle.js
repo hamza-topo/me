@@ -3,6 +3,7 @@ import { useMediaQuery } from "react-responsive";
 
 export default function DarkToggle() {
     const DARK_CLASS = "dark";
+    const ANNIMATE = 'animate';
     const systemPrefersDark = useMediaQuery(
         {
             query: "(prefers-color-scheme: dark)",
@@ -18,12 +19,13 @@ export default function DarkToggle() {
     useEffect(() => {
         const appElement = document.querySelector('.App');
         if (appElement) {
+            document.body.classList.add(ANNIMATE);
+            document.body.classList.add(ANNIMATE); // Adds animate class to App element
             if (isDark) {
                 document.body.classList.add(DARK_CLASS); // Adds dark class to App element
             } else {
-                document.body.classList.remove(DARK_CLASS); // Removes dark class from App element
+                document.body.classList.remove(DARK_CLASS); // Removes dark class from App 
             }
-            console.log(document.body)
         }
     }, [isDark]);
 
