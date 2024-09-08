@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import DarkToggle from '../DarkToggle';
 
 export function Nav() {
     const links = [
@@ -26,8 +25,6 @@ export function Nav() {
                     ))}
                 </ul>
             </nav>
-            <DarkToggle />
-
         </>
     )
 }
