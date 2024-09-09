@@ -18,7 +18,7 @@ export function Blog() {
               <a href={blog.link} target="_blank" rel="noopener noreferrer"><h1 className='section-title'>{blog.title}</h1></a><br></br>
               {blog.content}
               <ul className='header-socials-icons'>
-                <li><span style={{'color' : '#c5c5c5'}}>{blog.published}</span></li>
+                <li><span className='text-span'>{blog.published}</span></li>
                 <li><a href={blog.link} target="_blank" rel="noopener noreferrer"><i className="fas fa-arrow-right"></i></a></li>
               </ul>
             </p>

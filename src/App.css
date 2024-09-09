@@ -2,8 +2,9 @@
   --bg-color: #e1e1eb;
   --title-color: #121312;
   --card-bg-color: rgba(238, 238, 238, 0.651);
-  --text-color: black;
+  --text-color: rgb(0, 0, 0);
   --btn-color: #ffffff00;
+  --text-span-color: #0c0c0c;
 }
 
 .dark {
@@ -12,6 +13,7 @@
   --card-bg-color: #222529;
   --text-color: white;
   --btn-color: #ffffff00;
+  --text-span-color: #c5c5c5;
 }
 
 
@@ -19,8 +21,20 @@ body {
   background-color: var(--bg-color);
 }
 
+p {
+  color: var(--text-color)
+}
+
 .animate {
   transition: all ease-in-out .8s;
+}
+
+.fa-solid {
+  color: var(--title-color);
+}
+
+.text-span {
+  color: var(--text-span-color);
 }
 
 .cursor-pointer {
@@ -79,25 +93,24 @@ ul.header-socials-icons {
 }
 
 .about .me.card {
-  width: 50%;
   height: auto;
   padding: 1%;
 }
+
+.me .card {
+  width: 50%;
+}
+
 
 .center {
   display: flex;
   justify-content: center;
 }
 
-/**elements**/
-p {
-  font-size: 1.2rem;
-  /* color: rgba(245, 245, 245, 0.5); */
-}
-
-.small {
-  font-size: 1rem;
+.small p {
   color: var(--text-color);
+  font-size: 2vw;
+
 }
 
 
@@ -133,10 +146,7 @@ a:hover {
 }
 
 .me.card {
-  /* width: 80%; */
-  /* Adjust the percentage as needed */
   height: auto;
-  /* Let the height adjust automatically */
 }
 
 /* Move this into a separate scss file : blogs section css*/
@@ -157,7 +167,6 @@ a:hover {
 }
 
 .blogs .me.card {
-  width: 80%;
   height: auto;
   padding: 1%;
 }
@@ -236,6 +245,7 @@ button {
 @media screen and (min-width: 601px) {
   .me.card p {
     font-size: 16px;
+    width: 100%;
   }
 
   .section-title {
@@ -254,6 +264,7 @@ button {
 @media screen and (max-width: 600px) {
   .me.card p {
     font-size: 10px;
+    width: 100%;
   }
 
   .section-title {
@@ -269,8 +280,9 @@ button {
 }
 
 @media only screen and (max-width: 768px) {
-  .me {
-    width: 100%;
+  .me.card p {
+    font-size: 8px;
+    width: 50%;
   }
 }
 

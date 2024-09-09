@@ -20,7 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cv" element={<Cv />} />
       </Routes>
-      <DarkToggle />
+      
     </div>
   );
 }
